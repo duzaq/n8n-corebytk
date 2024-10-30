@@ -1,4 +1,9 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
 [deploy]
+numReplicas = 1
 startCommand = "n8n start"
 healthcheckPath = "/healthz"
 healthcheckTimeout = 300
